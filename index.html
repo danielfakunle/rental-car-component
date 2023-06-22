@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Simple Tailwind Starter</title>
+    <script src="https://kit.fontawesome.com/851381af39.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <main class="flex flex-col items-center h-screen justify-center bg-[#F5F3E6]">
+      <form action="" class="bg-white w-[36rem] h-[42rem] p-14 flex flex-col justify-between rounded-md shadow-2xl">
+        <h1 class="font-bold text-3xl">Search for a rental car</h1>
+        <label class="-mb-3" for="pick-up">Pick up location</label>
+        <input class="border-2 rounded-md border-slate-300 h-13 p-4" type="text" id="pick-up" name="pickup-location" placeholder="City, airport, region, district...">
+        <div class="flex flex-row items-center">
+          <input class="appearance-none h-6 w-6 bg-white border-2 border-[#0D1C52] mr-2 rounded-md checked:bg-[#0D1C52] transition-all" type="checkbox" id="deliver" name="deliver-elsewhere">
+          <label for="deliver">Deliver the car somewhere else</label>
+        </div>
+        <div class="flex flex-row items-center justify-between gap-2">
+          <div class="flex flex-col w-1/2">
+            <label for="pickup-date">Date of pickup</label>
+            <input class="border-2 rounded-md border-slate-300 p-4 h-14" type="date" id="pickup-date" name="pickup-date">
+            <input class="border-2 rounded-md border-slate-300 p-4 h-14 mt-2" type="time" name="pickup-time" id="">
+          </div>
+          <div class="flex flex-col w-1/2">
+            <label for="delivery-date">Date of delivery</label>
+            <input class="border-2 rounded-md border-slate-300 p-4 h-14" type="date" id="delivery-date" name="delivery-date">
+            <input class="border-2 rounded-md border-slate-300 p-4 h-14 mt-2" type="time" name="delivery-time" id="">
+          </div>
+        </div>
+
+        <div class="flex flex-row items-center">
+          <input class="appearance-none h-6 w-6 bg-white border-2 border-[#0D1C52] mr-2 rounded-md checked:bg-[#0D1C52] transition-all" type="checkbox" id="age" name="age">
+          <label for="age">The driver's age between 30 and 65?</label>
+        </div>
+        <div>
+          <p><i class="fa-solid fa-check pr-2 py-2"></i>No credit card fees</p>
+          <p><i class="fa-solid fa-check pr-2 py-2"></i>No change fees</p>
+          <p><i class="fa-solid fa-check pr-2 py-2"></i>Price match guarantee</p>
+        </div>
+        <input class="h-20 bg-[#FE6F4F] rounded-3xl text-white" type="submit" value="Search">
+      </form>
+    </main>
+  </body>
+</html>
